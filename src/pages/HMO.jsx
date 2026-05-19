@@ -26,11 +26,6 @@ export default function HMO() {
       {/* ── HMO PROVIDERS ── */}
       <section className="hmo-providers-section">
         <div className="hmo-providers-inner">
-          <div className="hmo-providers-header reveal">
-            <span className="section-tag">Insurance</span>
-            <h2>Accepted <em>HMO Providers</em></h2>
-            <p>We accept the following health maintenance organizations. Bring your HMO card on your visit.</p>
-          </div>
           <div className="hmo-providers-grid">
             {hmoProviders.map((p, i) => (
               <div key={i} className="hmo-provider-card reveal" style={{ transitionDelay: `${i * 0.1}s` }}>
