@@ -1,0 +1,86 @@
+/* ── CSS Custom Properties ── */
+:root {
+  --blue:         #0B4375;
+  --blue-dark:    #072d52;
+  --blue-mid:     #1a5a8f;
+  --blue-light:   rgba(11, 67, 117, 0.08);
+  --teal:         #00A4A6;
+  --teal-dark:    #007f81;
+  --teal-light:   rgba(0, 164, 166, 0.14);
+  --mint:         #A8E6CF;
+  --mint-dark:    #7bc9ab;
+  --mint-light:   rgba(168, 230, 207, 0.28);
+  --white:        #FFFFFF;
+  --text:         #1a2a3a;
+  --text-muted:   #5a7890;
+  --surface:      #FFFFFF;
+  --surface-alt:  #f4f8fb;
+  --border:       rgba(11, 67, 117, 0.11);
+  --glass-bg:     rgba(255, 255, 255, 0.10);
+  --glass-strong: rgba(255, 255, 255, 0.18);
+  --glass-border: rgba(255, 255, 255, 0.22);
+  --glass-blur:   blur(20px);
+  --shadow-sm:    0 2px 12px rgba(11, 67, 117, 0.07);
+  --shadow-md:    0 8px 32px rgba(11, 67, 117, 0.12);
+  --shadow-lg:    0 20px 60px rgba(11, 67, 117, 0.18);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --r-sm:  10px;
+  --r-md:  16px;
+  --r-lg:  24px;
+  --r-xl:  32px;
+  --nav-h: 72px;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html  { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body  {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+img    { display: block; max-width: 100%; }
+button { cursor: pointer; border: none; background: none; font: inherit; }
+a      { text-decoration: none; color: inherit; }
+ul     { list-style: none; }
+
+/* ── Typography ── */
+h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; line-height: 1.1; }
+
+/* ── Glassmorphism utility ── */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+}
+.glass-strong {
+  background: var(--glass-strong);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid var(--glass-border);
+}
+
+/* ── Section tag ── */
+.section-tag {
+  display: inline-block;
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--teal); margin-bottom: 12px;
+}
+.section-tag--light { color: var(--mint); }
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--surface-alt); }
+::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 3px; }
