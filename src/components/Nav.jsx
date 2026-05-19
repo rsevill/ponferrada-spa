@@ -8,6 +8,7 @@ const links = [
   { to: '/hours',   label: 'Hours',     end: false },
   { to: '/support', label: 'Support Us',end: false },
   { to: '/hmo',     label: 'HMO',       end: false },
+  { to: '/doctors', label: 'Doctors',   end: false },
 ]
 
 export default function Nav() {

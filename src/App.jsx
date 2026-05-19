@@ -8,6 +8,7 @@ import Hours from './pages/Hours'
 import SupportUs from './pages/SupportUs'
 import HMO from './pages/HMO'
 import Apply from './pages/Apply'
+import Doctors from './pages/Doctors'
 import './App.css'
 
 function ScrollToTop() {
@@ -27,6 +28,7 @@ function AnimatedRoutes() {
         <Route path="/support" element={<SupportUs />} />
         <Route path="/hmo"     element={<HMO />} />
         <Route path="/apply"   element={<Apply />} />
+        <Route path="/doctors" element={<Doctors />} />
       </Routes>
     </div>
   )
