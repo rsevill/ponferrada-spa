@@ -56,6 +56,11 @@ export default function Nav() {
                 </NavLink>
               </li>
             ))}
+            <li>
+              <NavLink to="/apply" className={({ isActive }) => 'nav-apply-btn' + (isActive ? ' active' : '')}>
+                Apply Now
+              </NavLink>
+            </li>
           </ul>
 
           <button
@@ -83,6 +88,15 @@ export default function Nav() {
               </NavLink>
             </li>
           ))}
+          <li>
+            <NavLink
+              to="/apply"
+              className={({ isActive }) => 'mob-link mob-apply' + (isActive ? ' active' : '')}
+              onClick={() => setOpen(false)}
+            >
+              Apply Now
+            </NavLink>
+          </li>
         </ul>
       </div>
     </>

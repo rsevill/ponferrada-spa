@@ -57,6 +57,24 @@
   height: 2px; background: var(--teal); border-radius: 2px;
 }
 
+/* ── Apply CTA ── */
+.nav-apply-btn {
+  display: inline-flex; align-items: center;
+  padding: 8px 20px; border-radius: 50px;
+  background: var(--teal); color: white !important;
+  font-size: 13.5px; font-weight: 700;
+  margin-left: 8px;
+  box-shadow: 0 4px 14px rgba(0,164,166,0.40);
+  transition: all 0.25s;
+}
+.nav-apply-btn:hover { background: var(--teal-dark); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,164,166,0.50); }
+.nav-apply-btn.active { background: var(--teal-dark); }
+
+.mob-apply {
+  color: var(--mint) !important;
+  font-weight: 700;
+}
+
 /* ── Hamburger ── */
 .hamburger {
   display: none;
