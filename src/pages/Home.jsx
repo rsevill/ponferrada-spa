@@ -23,7 +23,7 @@ const careCards = [
 const whyCards = [
   { icon: '🛡️', title: 'DOH Licensed',    desc: 'Licensed and accredited by the Department of Health since 2016 as a Level 1 general hospital in Guiuan.' },
   { icon: '❤️', title: 'Patient-First',    desc: 'Every decision centers on the dignity, comfort, and well-being of each person in our care.' },
-  { icon: '🏘️', title: 'Community Roots', desc: 'Family-owned and deeply rooted in Guiuan, Eastern Samar — serving our neighbors since 2005.' },
+  { icon: '🏘️', title: 'Community Roots', desc: 'Family-owned and deeply rooted in Eastern Samar — serving our neighbors since 2005.' },
 ]
 
 export default function Home() {

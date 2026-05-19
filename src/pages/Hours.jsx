@@ -115,8 +115,22 @@ export default function Hours() {
             <h3>Emergency Services</h3>
             <p>Our Emergency Room is staffed 24 hours a day, 7 days a week. For life-threatening emergencies, please go directly to the ER or call us immediately.</p>
           </div>
-          <a href="tel:+639175117707" className="btn btn-emergency">
-            📞 &nbsp;(+63) 917-511-7707
+          <a href="tel:+639617359927" className="btn btn-emergency">
+            📞 &nbsp;(+63) 961-735-9927
+          </a>
+        </div>
+      </section>
+
+      {/* ── LABORATORY CONTACT ── */}
+      <section className="hr-lab reveal">
+        <div className="hr-lab-inner">
+          <div className="hr-lab-icon">🔬</div>
+          <div>
+            <h3>Clinical Laboratory</h3>
+            <p>For laboratory inquiries, schedules, and test results, please contact us directly.</p>
+          </div>
+          <a href="tel:+639617359927" className="btn btn-lab">
+            📞 &nbsp;(+63) 961-735-9927
           </a>
         </div>
       </section>
@@ -128,7 +142,7 @@ export default function Hours() {
             <h3>Looking for a specific doctor?</h3>
             <p>Browse our full doctor directory to find specialists, check their schedules, and view contact details.</p>
           </div>
-          <Link to="/hmo" className="btn-dir">Doctor Directory →</Link>
+          <Link to="/doctors" className="btn-dir">Doctor Directory →</Link>
         </div>
       </section>
 
