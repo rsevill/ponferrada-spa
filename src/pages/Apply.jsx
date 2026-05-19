@@ -43,17 +43,17 @@ export default function Apply() {
     e.preventDefault()
     setStatus('sending')
     try {
-      const res = await fetch('https://formsubmit.co/ajax/vincentlenardty@gmail.com', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
+          access_key: '3d9d15a6-0ba4-4be2-a1f1-c149211bf528',
+          subject: `Job Application — ${form.position} | PPHI`,
           ...form,
-          _subject: `Job Application — ${form.position} | PPHI`,
-          _captcha: 'false',
         }),
       })
       const data = await res.json()
-      if (data.success === 'true' || data.success === true) {
+      if (data.success === true) {
         setStatus('success')
         setForm(empty)
       } else {
