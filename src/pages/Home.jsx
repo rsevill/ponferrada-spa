@@ -46,7 +46,7 @@ export default function Home() {
             </h1>
             <p className="h-hero-sub">
               Compassionate, expert healthcare delivered with dignity and warmth —
-              serving Guiuan, Eastern Samar since 2016.
+              serving Eastern Samar since 2016.
             </p>
             <div className="h-hero-actions">
               <Link to="/hours" className="btn btn-primary">View Clinic Hours</Link>
@@ -102,7 +102,7 @@ export default function Home() {
               <img src="/dr-socorro.png" alt="" aria-hidden="true" />
             </div>
             <div>
-              <strong>Dr. Socorro de Lira Ponferrada</strong>
+              <strong>Dr. Socorro de Lira Ponferrada, M.D.</strong>
               <span>Medical Director · Internal Medicine</span>
             </div>
           </div>
