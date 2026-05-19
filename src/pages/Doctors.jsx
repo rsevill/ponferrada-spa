@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { createPortal } from 'react-dom'
 import { useReveal } from '../hooks/useReveal'
 import './Doctors.css'
 
@@ -140,7 +141,7 @@ export default function Doctors() {
       </section>
 
       {/* ── MODAL ── */}
-      {selected && (
+      {selected && createPortal(
         <div className="doc-overlay" onClick={close}>
           <div className="doc-modal" onClick={e => e.stopPropagation()}>
             <button className="doc-modal-close" onClick={close} aria-label="Close">×</button>
@@ -176,7 +177,8 @@ export default function Doctors() {
               ))}
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
 
     </main>
