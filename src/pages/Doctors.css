@@ -114,8 +114,9 @@
   background: rgba(7,45,82,0.55);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  display: flex; align-items: center; justify-content: center;
-  padding: 20px;
+  display: flex; align-items: flex-start; justify-content: center;
+  padding: calc(var(--nav-h) + 24px) 20px 24px;
+  overflow-y: auto;
   animation: doc-fade 0.2s ease;
 }
 @keyframes doc-fade { from { opacity: 0 } to { opacity: 1 } }
