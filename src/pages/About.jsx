@@ -30,8 +30,8 @@ const licensed = [
 
 const services = [
   { num: '01', name: 'Emergency Care',          desc: '24/7 emergency room staffed by experienced general physicians and on-call specialists.' },
-  { num: '02', name: 'Specialist Clinics',      desc: 'Internal medicine, pediatrics, OB/GYN, general surgery, ENT, and anesthesiology.' },
-  { num: '03', name: 'Clinical Laboratory',     desc: 'Secondary-level laboratory including drug testing area and bacteriology (Genexpert).' },
+  { num: '02', name: 'Specialist Clinics',      desc: 'Internal Medicine, Pediatrics, OB/GYN, General Surgery, ENT, and Anesthesiology.' },
+  { num: '03', name: 'Clinical Laboratory',     desc: 'Secondary-level laboratory.' },
   { num: '04', name: 'Blood Service Facility',  desc: 'DOH-licensed blood station for safe and timely transfusion services.' },
   { num: '05', name: 'Pharmacy',                desc: 'In-house licensed pharmacy serving prescriptions and over-the-counter medications.' },
   { num: '06', name: 'Newborn Screening',       desc: 'DOH-accredited center for early detection of metabolic and genetic disorders.' },
