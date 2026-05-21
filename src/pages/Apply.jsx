@@ -73,7 +73,7 @@ export default function Apply() {
         <div className="ap-hero-content reveal">
           <span className="section-tag section-tag--light">Careers</span>
           <h1>Join Our <em>Team</em></h1>
-          <p>Be part of a compassionate, dedicated healthcare family serving Guiuan, Eastern Samar. We are always looking for skilled and caring individuals to grow with us.</p>
+          <p>Be part of a compassionate, dedicated healthcare family serving Eastern Samar. We are always looking for skilled and caring individuals to grow with us.</p>
         </div>
       </div>
 
