@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
 import './Home.css'
+import doctorPhoto from '../assets/dr-socorro.webp'
 
 const careCards = [
   {
@@ -78,7 +79,7 @@ export default function Home() {
           <div className="h-doc-arch-bg" />
           <div className="h-doc-arch">
             <img
-              src="/dr-socorro.png"
+              src={doctorPhoto}
               alt="Dr. Socorro de Lira Ponferrada"
               className="h-doc-photo"
             />
@@ -99,7 +100,7 @@ export default function Home() {
 
           <div className="h-quote-author">
             <div className="h-author-avatar">
-              <img src="/dr-socorro.png" alt="" aria-hidden="true" />
+              <img src={doctorPhoto} alt="" aria-hidden="true" />
             </div>
             <div>
               <strong>Dr. Socorro de Lira Ponferrada, M.D.</strong>
