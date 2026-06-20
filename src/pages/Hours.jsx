@@ -6,30 +6,22 @@ const schedule = [
   {
     day: 'Monday – Friday',
     sub: 'Regular weekdays',
-    time: '8:00 AM – 5:00 PM',
+    time: '8:00 AM – 4:00 PM',
     badge: 'Open',
     badgeClass: 'badge-open',
     icon: '📅',
     iconClass: 'sch-weekday',
   },
   {
-    day: 'Saturday',
+    day: 'Saturday – Sunday',
     sub: 'Weekend clinic',
-    time: '8:00 AM – 5:00 PM',
+    time: '8:00 AM – 4:00 PM',
     badge: 'Open',
     badgeClass: 'badge-open',
     icon: '🗓️',
     iconClass: 'sch-saturday',
   },
-  {
-    day: 'Sunday & Public Holidays',
-    sub: 'Limited availability',
-    time: 'By Appointment Only',
-    badge: 'Appointment',
-    badgeClass: 'badge-appt',
-    icon: '📆',
-    iconClass: 'sch-holiday',
-  },
+  
 ]
 
 export default function Hours() {
